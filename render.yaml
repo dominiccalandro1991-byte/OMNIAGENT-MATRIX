@@ -1,0 +1,13 @@
+services:
+  - type: worker
+    name: omniagent-orchestrator
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: XAI_API_KEY
+        sync: false
+      - key: OPENROUTER_API_KEY
+        sync: false
