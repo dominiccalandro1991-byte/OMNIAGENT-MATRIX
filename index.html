@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OmniAgent Matrix</title>
+    <meta name="description" content="Enterprise AI workforce orchestration. Ed25519-gated telemetry. Fail closed." />
+    <style>
+      :root { color-scheme: dark; }
+      body { margin:0; font: 15px/1.5 ui-sans-serif, system-ui, sans-serif; background:#0b0d10; color:#e6ebe8; }
+      main { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+      h1 { font-size: 28px; letter-spacing: -0.03em; font-weight: 600; margin: 0 0 8px; }
+      .k { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #7d8882; }
+      p, li { color: #b7c0bb; }
+      a { color: #d5ddd8; }
+      .box { border: 1px solid #24302b; padding: 16px 18px; margin: 20px 0; }
+      code { font-family: ui-monospace, monospace; font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="k">OmniAgent Matrix</div>
+      <h1>Signed telemetry. Capability-bounded tools.</h1>
+      <p>
+        Independent AI workforce control plane. Ingress verifies Ed25519 over the original raw bytes,
+        then replay, schema, and authorization. Usage is provider-reported and server-authoritative.
+        If Ed25519 is unavailable the service fails closed.
+      </p>
+      <div class="box">
+        <div class="k">Pipeline</div>
+        <p>AGENT → EVENT → RAW SIGNATURE → REPLAY → PARSE → SCHEMA → AUTHZ → ROUTER → RUNTIME / TOOL / LLM → USAGE → BILLING → AUDIT</p>
+      </div>
+      <ul>
+        <li>Source: <a href="https://github.com/dominiccalandro1991-byte/OMNIAGENT-MATRIX">github.com/dominiccalandro1991-byte/OMNIAGENT-MATRIX</a></li>
+        <li>CI: GitHub Actions workflow <code>verify</code></li>
+        <li>Tests: <code>node --experimental-strip-types --test tests/*.test.ts</code></li>
+      </ul>
+    </main>
+  </body>
+</html>
